@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Thypad</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section class="login panel">
+		<div class="loginForm">
+			<h3>Pick a username</h3>
+      		<input type="text" class="txtUser" maxlength="20"></input>
+		</div>
+	</section>
+	<section class="main panel hide">
+		<section class="left">
+			<h3>THY PAD</h3>
+			<div>ONLINE USERS</div>
+			<ul class="users"></ul>
+		</section>
+		<section class="right">
+			<div class="note" style="white-space: pre-wrap"></div>
+			<textarea class="txtNote" placeholder="Start typing..."></textarea>
+		</section>
+	</section>
+	<script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="client.js"></script>
+</body>
+</html>
